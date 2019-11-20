@@ -1,0 +1,124 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "0c793KgcGv2vi9PA3S1IqW6A7MI=",
+			"path": "github.com/cisordeng/beego",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "1NDolESBh8PbxtTWtWIdniDoxvc=",
+			"path": "github.com/cisordeng/beego/config",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "/+NRpC+nIvQf/+Tq1jYDSt1hhn0=",
+			"path": "github.com/cisordeng/beego/context",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "A3JoM+BUntmMT8/HkU6XoFqaMa4=",
+			"path": "github.com/cisordeng/beego/context/param",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "9EOKJl3LCxuU/W9VwPZ2rRIh72Q=",
+			"path": "github.com/cisordeng/beego/grace",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "j34Ho1Oz87VU9WsLuYynKh9BNt0=",
+			"path": "github.com/cisordeng/beego/logs",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "7bvY0ktwgOFCezsV6PmcbSQPCpM=",
+			"path": "github.com/cisordeng/beego/orm",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "SY9Rmazq4pIQ9OWw1SXKCUtCI8I=",
+			"path": "github.com/cisordeng/beego/plugins/cors",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "n/7+7C4qD0sM8er4PoARg4jBHCI=",
+			"path": "github.com/cisordeng/beego/session",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "zi/JZySoD7YJkny5Zud6yjJeM3w=",
+			"path": "github.com/cisordeng/beego/toolbox",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "s9iAlV8mglFSBIAW2TDDrajpOpg=",
+			"path": "github.com/cisordeng/beego/utils",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "EL853rroMZq0x0W1ah+rAZetVm8=",
+			"path": "github.com/cisordeng/beego/xenon",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "Km4hczIJzag/NQ/ABuOg0bIe/SI=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "b4242bab7dc57d57fef955900943999b6fb34b67",
+			"revisionTime": "2019-11-14T11:57:53Z"
+		},
+		{
+			"checksumSHA1": "J6lNRPdrYhKft6S8x33K9brxyhE=",
+			"origin": "github.com/cisordeng/beego/vendor/golang.org/x/crypto/acme",
+			"path": "golang.org/x/crypto/acme",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "EFjIi/zCZ1Cte0MQtyxGCTgSzk8=",
+			"origin": "github.com/cisordeng/beego/vendor/golang.org/x/crypto/acme/autocert",
+			"path": "golang.org/x/crypto/acme/autocert",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "ZSWoOPUNRr5+3dhkLK3C4cZAQPk=",
+			"origin": "github.com/cisordeng/beego/vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "8694d2664f54d9cabfa183e48d879bf6d5ba950c",
+			"revisionTime": "2019-11-19T13:49:34Z"
+		},
+		{
+			"checksumSHA1": "+BsLrFGOdp9LwNk3kN38GgfiyVY=",
+			"path": "nature/business/comment",
+			"revision": "e327a867b5e3d8c00feac8caab3b81dc772b55bc",
+			"revisionTime": "2019-11-17T11:51:45Z"
+		},
+		{
+			"checksumSHA1": "6SiL0ZaY9Zs3YfNOVAvAkuCKcws=",
+			"path": "nature/common/leo",
+			"revision": "e327a867b5e3d8c00feac8caab3b81dc772b55bc",
+			"revisionTime": "2019-11-17T11:51:45Z"
+		},
+		{
+			"checksumSHA1": "YH7wBPM+FJDyAthnYZcUMV3n9uU=",
+			"path": "nature/model/comment",
+			"revision": "e327a867b5e3d8c00feac8caab3b81dc772b55bc",
+			"revisionTime": "2019-11-17T11:51:45Z"
+		}
+	],
+	"rootPath": "dolphin"
+}
