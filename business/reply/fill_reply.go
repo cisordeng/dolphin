@@ -2,6 +2,7 @@ package reply
 
 import (
 	"github.com/cisordeng/beego/xenon"
+	"reflect"
 
 	"dolphin/common/leo"
 )
@@ -11,28 +12,44 @@ func Fill(replies []*Reply) {
 		return
 	}
 
-	fillUser(replies)
+	leo.FillUser(replies)
 	fillReply(replies)
 }
 
-func fillUser(replies []*Reply) {
-	userIds := make([]int, 0)
-	for _, Reply := range replies {
-		userIds = append(userIds, Reply.UserId)
+func FillReplies(resources interface{}) {
+	resourceIds := make([]int, 0)
+	for i := 0; i < reflect.ValueOf(resources).Len(); i ++ {
+		resource := reflect.ValueOf(resources).Index(i)
+		resourceIds = append(resourceIds, resource.Elem().FieldByName("Id").Interface().(int))
 	}
 
-	users := leo.GetUsers(xenon.Map{
-		"id__in": userIds,
+	bytes := reflect.TypeOf(resources).String()[3:]
+	resourceType := ""
+	for i, b := range bytes {
+		if b >= 'A' && b <= 'Z' {
+			if i - 1 >= 0 && bytes[i - 1] != '.' {
+				resourceType += "_"
+			}
+			resourceType += string(b + 32)
+		} else {
+			resourceType += string(b)
+		}
+	}
+	replies := GetReplies(xenon.Map{
+		"resource_id__in": resourceIds,
+		"resource_type": resourceType,
 	})
 
-	id2user := make(map[int]*leo.User)
-	for _, user := range users {
-		id2user[user.Id] = user
+
+	resourceId2replies := make(map[int][]*Reply)
+	for _, reply := range replies {
+		resourceId2replies[reply.ResourceId] = append(resourceId2replies[reply.ResourceId], reply)
 	}
 
-	for _, Reply := range replies {
-		if user, ok := id2user[Reply.UserId]; ok {
-			Reply.User = user
+	for i := 0; i < reflect.ValueOf(resources).Len(); i ++ {
+		resource := reflect.ValueOf(resources).Index(i)
+		if replies, ok := resourceId2replies[resource.Elem().FieldByName("Id").Interface().(int)]; ok {
+			resource.Elem().FieldByName("Replies").Set(reflect.ValueOf(replies))
 		}
 	}
 	return
