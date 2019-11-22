@@ -64,6 +64,7 @@ func fillReply(replies []*Reply) {
 	iReplies := GetReplies(xenon.Map{
 		"id__in": replyIds,
 	})
+	Fill(iReplies)
 
 	id2reply := make(map[int]*Reply)
 	for _, reply := range iReplies {
@@ -71,8 +72,8 @@ func fillReply(replies []*Reply) {
 	}
 
 	for _, reply := range replies {
-		if reply, ok := id2reply[reply.ReplyId]; ok {
-			reply.Reply = reply
+		if r, ok := id2reply[reply.ReplyId]; ok {
+			reply.Reply = r
 		}
 	}
 	return
